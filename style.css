@@ -1,0 +1,645 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Futura';
+
+}
+@font-face {
+    font-family: 'Futura';
+    src: url('./fonts/Futura.woff2') format('woff2'),
+         url('./fonts/Futura.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+#intro::-webkit-media-controls{
+    display: none;
+}
+.mmover{
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    background-color: #fb5607;
+    border-radius: 50%;
+    z-index: 100;
+}
+.navpage{
+    height: 10vh;
+    width: 100vw;
+    background-color: rgba(0, 128, 0, 0);
+    position: fixed;
+    z-index: 140;
+    /* background-color: rgb(119, 5, 5); */
+    /* background-color: red; */
+   
+}
+.abovesection{
+    height: 15vh;
+    width: 100vw;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.rightsection{
+    height: 100%;
+    /* width: 30vw; */
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-right: 150px; */
+
+}
+.rightsection h4 a{
+    font-size: 15px;
+    font-family: 'Futura';
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(57, 55, 55);
+  
+}
+.rightsection h4{
+    font-size: 15px;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    transition: all ease 0.5s;
+}
+.rightsection h4:hover{
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.rightsection h4 a:hover{
+   color: red;
+  
+}
+.innavpage{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: fixed;
+    z-index: 190;
+    display: none;
+}
+.innavpage i{
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 95vw;
+    cursor: pointer;
+    z-index: 120;
+}
+.innavpage i{
+    padding-right: 50px;
+}
+.innavpage h1 a{
+    font-size: 100px;
+    font-family: 'Futura';
+    text-transform: uppercase;
+    color: white;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all ease 0.2s;
+    align-items: center;
+    text-decoration: none;
+    line-height: 100px;
+}
+.containinnav{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.innavpage h1 a:hover{
+    color: #fb5607;
+}
+.page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.midtextcontainer{
+    height: 60vh;
+    width: 80vw;
+    /* background-color: rgb(0, 255, 98); */
+    text-align: center;
+    padding-top: 100px;
+}
+.page1 .midtextcontainer h1{
+    font-size: 9vw;
+    font-family: 'Futura';
+    text-transform: uppercase;
+    line-height: 120px;
+}
+.ftext{
+    color: white;
+}
+.page1 .midtextcontainer .stext{
+    font-size: 11vw;
+    color: #fb5607;
+}
+.page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+.videocontainer{
+    height: 80vh;
+    width: 80vw;
+    /* background-color: red; */
+
+}
+.videocontainer video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.page3{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.page3 .text3{
+    height: 30vh;
+    width: 100vw;
+    /* background-color: red; */
+    text-align: center;
+    
+}
+.page3 .text3 h1{
+    font-size: 4vw;
+    font-family: 'Futura';
+    color: white;
+    line-height: 60px;
+}
+.rotate{
+    height: 150px;
+    width: 150px;
+    background-color: #fb5607;
+    text-align: center;
+    border-radius: 50%;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.rotate h1{
+    /* margin-top: -20px; */
+    font-size: 100px;
+    color: black;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+
+.about3{
+    height: 8vh;
+    width: 11vw;
+    /* background-color: #fb5607; */
+    margin-top: 10vh;
+    color: white;
+    /* background-color: #a43704; */
+    
+   
+}
+.about3 h1 a{
+    font-family: 'Futura';
+    text-transform: uppercase;
+    font-weight: 300;
+    border: 1px solid #fb5607;
+    text-decoration: none;
+    color: #fb5607;
+}
+.page4{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.image4{
+    height: 80vh;
+    width: 400px;
+    overflow: hidden;
+    scale: 1;
+    overflow: hidden;
+  
+    /* background-color: red; */
+}
+.image4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 1s;
+
+}
+.text4{
+    height: 80vh;
+    width: 650px;
+    /* background-color: red; */
+}
+.text4 h1{
+    font-size: 50px;
+    font-family: 'Futura';
+}
+.image4 img:hover{
+    height: 120%;
+    width: 120%;
+    scale: 1.2;
+
+}
+.loader1{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    z-index: 150;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loadvideo{
+    height: 150px;
+    width: 150px;
+    /* background-color: green; */
+}
+.loadvideo video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.page5{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+.page5 marquee h1{
+    font-size: 10vw;
+    font-family: 'Futura';
+    text-transform: uppercase;
+    color: white;
+}
+.img5{
+    height: 50vh;
+    width: 600px;
+    /* background-color: #fb5607; */
+}
+.img5 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* aboutpage css */
+
+.apage1{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.ahead1 h1{
+    font-size: 80px;
+    color: white;
+}
+.ahead1 h6{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 10px;
+    letter-spacing: 5px;
+
+}
+
+.apara1{
+    height: 10vh;
+    width: 830px;
+    margin-top: 50px;
+    /* background-color: red; */
+}
+.apara1 p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 5px;
+    /* border:  1px solid #fb5607; */
+}
+.apage2{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+.ahead2{
+    text-align: center;
+
+}
+.ahead2 h4{
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+.ahead2 h1{
+    font-size: 50px;
+    color: white;
+}
+.ahead2 p{
+    margin-top: 50px;
+    font-size: 11px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.aimgcon2{
+    height: 60vh;
+    width: 500px;
+    /* background-color: #fb5607; */
+    margin: 0 auto;
+}
+.aimgcon2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.apage3{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.aleft3{
+    height: 80vh;
+    width: 500px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.aright3{
+    height: 80vh;
+    width: 500px;
+    /* background-color: red; */
+}
+.aright3 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.aleft3 h1{
+    color: white;
+}
+.apage4{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#aleft32{
+    display: flex;
+    flex-direction: column;
+}
+.cpage1{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cpage1 h1{
+    color: white;
+}
+.cpage2 h1{
+    color: white;
+    text-transform: capitalize;
+}
+.chead1{
+    text-align: center;
+}
+.chead1 button{
+    background-color: transparent;
+    border: none;
+}
+.chead1 button a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid #fb5607;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+}
+.chead1 button a:hover{
+    background-color: #fb5607;
+}
+.cpage2{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.instaprofile{
+    height: 30vh;
+    width: 800px;
+    /* background-color: red; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cpage2 .instaprofile button a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid #fb5607;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+}
+.cpage2 .instaprofile button{
+    background-color: transparent;
+    border: none;
+}
+.cpage2 .instaprofile button a:hover{
+    background-color: #fb5607;
+}
+.apage4 .aleft3 button{
+    background-color: transparent;
+    border: none;
+}
+.apage4 .aleft3 button a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid #fb5607;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+}
+.apage4 .aleft3 button a:hover{
+    background-color: #fb5607;
+}
+/* mediaquery */
+@media (max-width:900px) {
+    .ahead1 h1{
+        font-size: 55px;
+    }
+    .apara1{
+        width: 600px;
+    }
+    .apage3{
+        flex-direction: column;
+    }
+    .apage4{
+        flex-direction: column;
+    }
+}
+@media (max-width:650px) {
+    .page1 .midtextcontainer .ftext{
+        line-height: 5px;
+        font-size: 8vw;
+    }
+    .page1 .midtextcontainer .stext{
+        font-size: 10vw;
+        line-height: 80px;
+    }
+    .page3 .text3 h1{
+        font-size: 6vw;
+        line-height: 30px;
+    }
+    .rotate{
+        margin-top: -100px;
+    }
+    .page4{
+        flex-direction: column;
+        margin-top: -100px;
+    }
+    .text4{
+        width: 300px;
+    }
+    .page4{
+        display: flex;
+        flex-direction: column;
+    }
+    .text4 h1{
+        font-size: 35px;
+    }
+    .image4{
+        width: 360px;
+    }
+    .page5 marquee h1{
+        font-size: 50px;
+    }
+    .img5{
+        width: 320px;
+    }
+    .ahead1 h1{
+        font-size: 55px;
+    }
+    .apara1{
+        width: 300px;
+    }
+    .apara1 p{
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    .aimgcon2{
+        width: 300px;
+    }
+    .apage3{
+        margin-top: -50px;
+    }
+    .aleft3{
+        width: 350px;
+    }
+    .aright3{
+        width: 350px;
+    }
+    .instaprofile{
+        width: 330px;
+    }
+}
+@media (max-width:420px) {
+    body{
+        overflow-x: hidden;
+    }
+    .mmover{
+        display: none;
+    }
+    .page1 .midtextcontainer .ftext{
+        line-height: 5px;
+        font-size: 8vw;
+    }
+    .page1 .midtextcontainer .stext{
+        font-size: 60px;
+        line-height: 50px;
+    }
+    .innavpage h1 a{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .page3 .text3 h1{
+        font-size: 6vw;
+        line-height: 10px;
+    }
+    .page3 .text3{
+        margin-top: -400px;
+    }
+    .about3{
+        margin-left: -50px;
+    }
+    .page5{
+        overflow-x: hidden;
+    }
+}
+
+
+
+
+
