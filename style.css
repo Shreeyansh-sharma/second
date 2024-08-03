@@ -5,6 +5,9 @@
     font-family: 'Futura';
 
 }
+#main{
+    background-color: black;
+}
 @font-face {
     font-family: 'Futura';
     src: url('./fonts/Futura.woff2') format('woff2'),
@@ -637,6 +640,18 @@ body{
     .page5{
         overflow-x: hidden;
     }
+    .apage2{
+        height: 130vh;
+    }
+    .apage4{
+        background-color: black;
+        overflow: hidden;
+    }
+    .apage4 .aright3{
+        margin-top: -100px;
+        background-color: black;
+    }
+    
 }
 
 
